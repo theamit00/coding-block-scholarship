@@ -95,7 +95,7 @@ nav>ul {
     margin-left: 0px;
 }
 
-.nav li a:hover {
+.nav.bottomheadnav li a:hover {
     color: #ff7a01;
 }
 
