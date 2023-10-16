@@ -24,6 +24,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
 
 </head>
 
@@ -195,7 +196,7 @@
                     <h2>Upcoming Exam</h2>
                 </div>
 
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-md-6">
 
                         <div class="upcoming-exam-schedule mt-4 d-flex align-items-center justify-content-between">
@@ -250,15 +251,70 @@
 
                     </div>
                     <div class="col-md-6 mt-3">
-                        <div class="upcoming-enroll-box d-flex align-items-center justify-content-between">
-                            <div class="left">
+                        <div class="upcoming-enroll-box right d-flex align-items-center justify-content-center">
+
+
+                            <form id="cast-lead-form" class="" action="https://app.codingblocks.com/cast_leads">
+                                <label for="email">Email</label>
+                                <input 
+                                  id="email"
+                                  type="email"
+                                  placeholder="Enter email"
+                                  name="email"
+                                  required
+                                />
+                                <div class="row">
+                                    <div class="col-6 d-flex flex-column">
+                                        <label for="first-name">First name</label>
+                                <input
+                                  id="first-name"
+                                  type="text" 
+                                  placeholder="Enter first name"
+                                  name="firstName"
+                                />
+                                    </div>
+                                <div class="col-6 d-flex flex-column">
+                                    <label for="last-name">Last name</label>
+                                <input 
+                                  id="last-name"
+                                  type="text" 
+                                  placeholder="Enter last name"
+                                  name="lastName"
+                                />
+                                </div>
+                                </div>
+                                <label>University Year</label>
+                                <select name="universityYear">
+                                  <option value="FIRST">First</option>
+                                  <option value="SECOND">Second</option>
+                                  <option value="THIRD">Third</option>
+                                  <option value="FOURTH">Fourth</option>
+                                  <option value="OTHER">Other (High School, Working Professionals, Passouts)</option>
+                                </select>
+                                <label for="phone-number">Phone number</label>
+                                <input 
+                                  id="phone-number"
+                                  type="text"
+                                  placeholder="Enter phone number" 
+                                  name="phoneNumber"
+                                />
+                                <label>Applying for</label>
+                                <select name="applyingFor">
+                                  <option value="CAST_BEGINNER">CAST Beginner</option>
+                                  <option value="CAST_ADVANCED">CAST Advanced</option>
+                                </select>
+                                <input type="submit" value="Submit" />
+                              </form>
+
+
+                            <!-- <div class="left">
                                 <p style="margin-bottom: 0px;">Register now: FREE <span
                                         style="font-size: 18px;">&nbsp;<del>₹49</del></span></p>
                             </div>
                             <div class="right d-flex flex-column">
                                 <a href="#main" class="btn btn-primary">Enroll in CAST Beginner</a>
                                 <a href="#main" class="btn btn-primary">Enroll in CAST Advanced</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
